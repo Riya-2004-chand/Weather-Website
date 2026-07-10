@@ -1058,7 +1058,7 @@ error.style.display="none";
 try{
 
 const response =
-await fetch(`http://127.0.0.1:5000/weather?city=${encodeURIComponent(city)}`);
+await fetch(`https://weather-website-h7pc.onrender.com/weather?city=${encodeURIComponent(city)}`);
 
 const data = await response.json();
 console.log(data.icon);
@@ -1078,7 +1078,7 @@ if (!data.latitude || !data.longitude) {
 }
 
 const forecastResponse = await fetch(
-    `http://127.0.0.1:5000/forecast/location?lat=${data.latitude}&lon=${data.longitude}`
+    `https://weather-website-h7pc.onrender.com/forecast/location?lat=${data.latitude}&lon=${data.longitude}`
 );
 
 if (!forecastResponse.ok) {
@@ -1263,7 +1263,7 @@ document.getElementById("locationBtn").addEventListener("click", () => {
             const lon = position.coords.longitude;
 
             const response = await fetch(
-                `http://127.0.0.1:5000/weather/location?lat=${lat}&lon=${lon}`
+                `https://weather-website-h7pc.onrender.com/weather/location?lat=${lat}&lon=${lon}`
             );
 
             const data = await response.json();
@@ -1295,7 +1295,7 @@ document.getElementById("locationBtn").addEventListener("click", () => {
 
             // FORECAST SAFE CALL
             const forecastResponse = await fetch(
-                `http://127.0.0.1:5000/forecast/location?lat=${lat}&lon=${lon}`
+                `https://weather-website-h7pc.onrender.com/forecast/location?lat=${lat}&lon=${lon}`
             );
 
             if (!forecastResponse.ok) {
