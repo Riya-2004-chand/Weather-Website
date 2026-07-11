@@ -2,6 +2,9 @@
 
 A modern full-stack weather application that provides real-time weather data and a 5-day forecast using the OpenWeather API.
 
+## 🌐 Live Demo
+https://frontend-topaz-nu-30.vercel.app
+
 ## Features
 - Real-time weather information
 - 5-day weather forecast
@@ -26,5 +29,3 @@ API:
 ## Author
 Riya Chand
 
-## 🌐 Live Demo
-https://frontend-topaz-nu-30.vercel.app
